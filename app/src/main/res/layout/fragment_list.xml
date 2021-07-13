@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.List">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/varbg"/>
+
+    <ImageView
+        android:id="@+id/listleft"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_left_arrow"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/ltitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of Chairs"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+
+        android:layout_toEndOf="@+id/ltitle"
+        android:layout_marginLeft="90dp"
+        android:layout_toRightOf="@+id/ltitle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lrec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/topView"
+        android:layout_marginBottom="50dp"
+        />
+
+</RelativeLayout>

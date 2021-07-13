@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".fragments.Cart">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/cartleft"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/blackleft"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/cartTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shopping Cart"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRec"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/cartTitle"
+        android:layout_marginTop="25dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/cartLin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cartRec"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+
+            />
+
+        <TextView
+            android:id="@+id/carttotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0.0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_toEndOf="@id/cartLin"
+            android:layout_below="@id/cartRec" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/cartbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make Order"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/cartLin"
+        android:layout_marginTop="80dp"
+        android:elevation="20dp"
+        android:background="@drawable/mainbutton"/>
+
+    <Button
+        android:id="@+id/cartbtnCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue Shopping"
+        android:textAllCaps="false"
+        android:textColor="@color/darkgreen"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/cartbtn"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/green"
+        android:background="@drawable/mainbutton"/>
+</RelativeLayout>
+
+
+</ScrollView>

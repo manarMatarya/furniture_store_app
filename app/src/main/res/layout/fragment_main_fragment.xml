@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.main_fragment">
+
+<ImageView
+    android:id="@+id/mainmore"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/more"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="20dp"/>
+    <EditText
+        android:id="@+id/search"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="280dp"
+        android:background="@drawable/mainbutton"
+        android:backgroundTint="@color/basic"
+        android:hint="search Specific type"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:id="@+id/tvsearch"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/search"
+        android:background="@drawable/mainbutton"
+        android:drawableLeft="@drawable/search"
+        android:padding="11dp" />
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="251dp"-->
+    <!--        android:layout_marginLeft="-19dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_toEndOf="@+id/more"-->
+    <!--        android:layout_toRightOf="@+id/search"-->
+    <!--        android:background="@drawable/mainbutton"-->
+    <!--        android:drawableLeft="@drawable/search"-->
+    <!--        android:padding="10dp" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/R1"
+        android:layout_below="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:paddingLeft="20dp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/R1"
+        android:text="The All furniture"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/R2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_below="@id/tv1"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/R2"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:text="The Most Popular" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/R3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_below="@id/tv2"/>
+
+</RelativeLayout>

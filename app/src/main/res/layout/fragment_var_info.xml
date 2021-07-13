@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.var_info">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:backgroundTint="@color/green"
+        android:background="@drawable/varbg"/>
+
+    <ImageView
+        android:id="@+id/infoleft"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/blackleft"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/vartitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chair"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        app:civ_border_width="1dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/chair"
+        android:scaleType="centerCrop"
+        android:id="@+id/varimg"/>
+
+    <TextView
+        android:id="@+id/vardesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hdcvzddjv,hdzjukyxkxkxlucliyfcalyfeulygwrg;suoghrldzvcdljcvdlvdlvgljdvldgvdslgvcdsgvdsvsdv"
+        android:textColor="@color/dark"
+        android:layout_below="@id/varimg"
+        android:textSize="15dp"
+        android:layout_margin="20dp"/>
+
+    <RatingBar
+        android:id="@+id/varrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/vardesc"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:theme="@style/RatingBar"
+        android:layout_marginRight="30dp"
+        />
+    <LinearLayout
+        android:id="@+id/varlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/varrating"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp">
+        <Button
+            android:id="@+id/varb"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@color/green"
+            android:text="-"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:textColor="@color/dark"
+            android:layout_marginRight="8dp"/>
+        <TextView
+            android:id="@+id/vartotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="18sp"
+            android:textColor="@color/dark"
+            android:textStyle="normal"
+            />
+        <Button
+            android:id="@+id/vara"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@color/green"
+            android:text="+"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:id="@+id/varprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:text="150$"
+            android:textSize="18sp"
+            android:textColor="@color/dark"
+            android:textStyle="normal"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/varbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Add to cart"
+        android:textColor="#fff"
+        android:layout_marginRight="30dp"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/varlinear"
+        android:background="@drawable/mainbutton"
+        android:elevation="20dp"
+        android:shadowRadius="10"
+        android:shadowColor="@color/dark"/>
+
+
+
+
+</RelativeLayout>

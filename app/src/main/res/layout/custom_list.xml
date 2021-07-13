@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/basic">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/chair"
+        android:scaleType="centerCrop"
+        android:id="@+id/limg"/>
+    <TextView
+        android:id="@+id/lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fhxmchc"
+        android:textColor="@color/darkgreen"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/limg"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/limg" />
+    <TextView
+        android:id="@+id/ldesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fhxmcbbbbbfxhgfxmgjxfjgfxjgnxjgzxjgxjxjxfgnzxngxngxnhc"
+        android:textColor="#000"
+        android:textStyle="normal"
+        android:layout_toEndOf="@+id/limg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:layout_below="@id/lname"
+        android:layout_toRightOf="@+id/limg" />
+    <TextView
+        android:id="@+id/lprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="150$"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/limg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        android:layout_below="@id/ldesc"
+        android:layout_toRightOf="@+id/limg" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lprice"
+            android:layout_toEndOf="@id/limg"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/limg">
+<Button
+    android:id="@+id/b"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:background="#fff"
+    android:text="-"
+    android:onClick="decrement"
+    android:layout_marginRight="8dp"/>
+<TextView
+    android:id="@+id/ltotal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1"
+    android:textSize="16sp"
+    android:textColor="#000000"
+    />
+<Button
+    android:id="@+id/a"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:background="#fff"
+    android:text="+"
+    android:onClick="increment"
+    android:layout_marginLeft="8dp"/>
+</LinearLayout>
+    <Button
+        android:id="@+id/lbtnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/linear"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/linear"
+        android:text="Add to cart"
+        android:textColor="#fff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="12sp"
+        android:layout_below="@id/lprice"
+        android:background="@drawable/mainbutton"/>
+    </RelativeLayout>
+</RelativeLayout>
+
+

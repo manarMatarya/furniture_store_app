@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/green"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/cartname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="modern chair"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:layout_toLeftOf="@id/cartclose"
+        android:layout_marginRight="30dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/cartprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="200"
+        android:layout_toStartOf="@id/mark"
+        android:textColor="#000"
+        android:textStyle="bold"
+        />
+
+
+    <ImageView
+        android:id="@+id/cartclose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_x_mark"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+
+</RelativeLayout>
